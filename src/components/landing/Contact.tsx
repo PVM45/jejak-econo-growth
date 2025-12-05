@@ -184,7 +184,7 @@ export function Contact() {
             {/* WhatsApp Button */}
             <Button variant="whatsapp" size="lg" asChild className="w-full sm:w-auto">
               <a
-                href="https://wa.me/6281234567890"
+                href="https://wa.me/6282324292385"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -197,12 +197,12 @@ export function Contact() {
             <div className="p-6 bg-white/5 border border-white/10 rounded-2xl">
               <div className="flex items-center gap-4">
                 <div className="w-14 h-14 rounded-xl bg-teal-500/20 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-teal-400">24h</span>
+                  <span className="text-lg font-bold text-teal-400">🕐</span>
                 </div>
                 <div>
-                  <div className="text-white font-semibold">Respons Cepat</div>
+                  <div className="text-white font-semibold">Jam Kerja</div>
                   <div className="text-navy-400 text-sm">
-                    Tim kami akan merespons dalam 24 jam kerja
+                    Pagi - 22.00 WIB
                   </div>
                 </div>
               </div>
@@ -312,23 +312,19 @@ export function Contact() {
 
                 {/* Submit Button */}
                 <Button
-                  type="submit"
                   variant="hero"
                   size="lg"
                   className="w-full"
-                  disabled={isSubmitting}
+                  asChild
                 >
-                  {isSubmitting ? (
-                    <>
-                      <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                      Mengirim...
-                    </>
-                  ) : (
-                    <>
-                      <Send className="w-5 h-5" />
-                      Kirim & Dapatkan Analisis Awal
-                    </>
-                  )}
+                  <a
+                    href={`https://wa.me/6282324292385?text=${encodeURIComponent(`Halo, saya ${formData.name} dari ${formData.business}. Email: ${formData.email}. Tantangan: ${formData.challenge}. Pesan: ${formData.message}`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Send className="w-5 h-5" />
+                    Kirim & Dapatkan Analisis Awal
+                  </a>
                 </Button>
               </div>
             </form>
