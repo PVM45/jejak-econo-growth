@@ -94,10 +94,10 @@ export function Footer() {
             <ul className="space-y-3 text-navy-400">
               <li>
                 <a
-                  href="mailto:hello@jejak-creative.com"
+                  href="mailto:posterrebel@gmail.com"
                   className="hover:text-teal-400 transition-colors"
                 >
-                  hello@jejak-creative.com
+                  posterrebel@gmail.com
                 </a>
               </li>
               <li>Basecamp Jejak</li>
