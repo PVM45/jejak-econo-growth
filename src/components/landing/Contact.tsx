@@ -202,7 +202,7 @@ export function Contact() {
                 <div>
                   <div className="text-white font-semibold">Jam Kerja</div>
                   <div className="text-navy-400 text-sm">
-                    Pagi - 22.00 WIB
+                    08.00 - 22.00 WIB
                   </div>
                 </div>
               </div>
