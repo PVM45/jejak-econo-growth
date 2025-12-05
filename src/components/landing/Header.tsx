@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoJejak from "@/assets/logo-jejak.png";
 
 const navLinks = [
   { href: "#services", label: "Layanan" },
@@ -19,9 +20,7 @@ export function Header() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-navy-gradient flex items-center justify-center">
-              <span className="text-white font-bold text-xl">J</span>
-            </div>
+            <img src={logoJejak} alt="Jejak Logo" className="w-10 h-10 rounded-xl object-cover" />
             <span className="text-xl font-bold text-foreground">Jejak</span>
           </a>
 
