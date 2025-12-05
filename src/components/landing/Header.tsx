@@ -20,9 +20,7 @@ export function Header() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-teal-500 p-1 flex items-center justify-center">
-              <img src={logoJejak} alt="Jejak Logo" className="w-full h-full object-contain" />
-            </div>
+            <img src={logoJejak} alt="Jejak Logo" className="w-10 h-10 rounded-xl object-cover" />
             <span className="text-xl font-bold text-foreground">Jejak</span>
           </a>
 
@@ -42,7 +40,7 @@ export function Header() {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <Button variant="hero" size="default" asChild>
-              <a href="#contact">Konsultasi Gratis</a>
+              <a href="https://wa.me/6282324292385" target="_blank" rel="noopener noreferrer">Konsultasi Gratis</a>
             </Button>
           </div>
 
@@ -78,7 +76,7 @@ export function Header() {
                 </a>
               ))}
               <Button variant="hero" className="w-full mt-2" asChild>
-                <a href="#contact">Konsultasi Gratis</a>
+                <a href="https://wa.me/6282324292385" target="_blank" rel="noopener noreferrer">Konsultasi Gratis</a>
               </Button>
             </nav>
           </motion.div>

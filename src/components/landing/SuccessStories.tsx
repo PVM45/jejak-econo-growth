@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { ArrowRight, TrendingUp, Star } from "lucide-react";
+import { TrendingUp, Star } from "lucide-react";
 
 const caseStudies = [
   {
@@ -173,14 +173,6 @@ export function SuccessStories() {
                   </div>
                 </div>
 
-                {/* Link */}
-                <a
-                  href="#contact"
-                  className="inline-flex items-center gap-2 text-teal-600 font-semibold hover:text-teal-700 transition-colors group/link"
-                >
-                  Baca Studi Kasus Lengkap
-                  <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
-                </a>
               </div>
             </motion.div>
           ))}
